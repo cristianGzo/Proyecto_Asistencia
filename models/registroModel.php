@@ -18,7 +18,7 @@ class RegistroModel{
             $contrasena=$_POST['contrasena'];
             
             try {
-                $stmt = $this->conexion->prepare("INSERT INTO usuario (cve_usuario, nombre, apellido_paterno, apellido_materno, cve_catalogo_usuario, cve_cuenta) VALUES (6, :nombre, :apellido_paterno, :apellido_materno, 1, 1);");
+                $stmt = $this->conexion->prepare("INSERT INTO usuario (cve_usuario, nombre, apellido_paterno, apellido_materno, cve_catalogo_usuario, cve_cuenta) VALUES (8, :nombre, :apellido_paterno, :apellido_materno, 1, 1);");
                 $stmt->bindParam(':nombre', $Usuario);
                 $stmt->bindParam(':apellido_paterno', $apePat);
                 $stmt->bindParam(':apellido_materno', $apeMat);
@@ -40,7 +40,7 @@ class RegistroModel{
             $contrasena=$_POST['contrasena'];
             
             try {
-                $stmt = $this->conexion->prepare("INSERT INTO cuenta (cve_cuenta, correo, contrasena) VALUES (2, :correo, :contrasena);");
+                $stmt = $this->conexion->prepare("INSERT INTO cuenta (cve_cuenta, correo, contrasena) VALUES (4, :correo, :contrasena);");
                 $stmt->bindParam(':correo', $correo);
                 $stmt->bindParam(':contrasena', $contrasena);
                 //$stmt->bindParam(':correo', $correo);

@@ -1,7 +1,7 @@
 <?php
 class Conexion {
     private $DBServer = 'localhost';
-    private $DBUser = 'gpusr'; 
+    private $DBUser = 'gestionp'; 
     private $DBPass = '1234'; 
     private $DBName = 'asistencia';
 
